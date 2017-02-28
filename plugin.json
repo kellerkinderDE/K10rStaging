@@ -1,0 +1,31 @@
+{
+  "label": {
+    "de": "Staging-Umgebung",
+    "en": "Staging-Env"
+  },
+  "copyright": "(c) by Kellerkinder / k10r GmbH",
+  "license": "MIT",
+  "link": "http://www.kellerkinder.de",
+  "author": "Kellerkinder / k10r GmbH",
+  "support": "anfragen@kellerkinder.de",
+
+  "currentVersion": "0.0.2",
+
+  "changelog": {
+    "de": {
+      "0.0.2": "Staging-Hinweis für Frontend ergänzt",
+      "0.0.1": "Erstveröffentlichung"
+    },
+    "en": {
+      "0.0.2": "Added staging notice in frontend",
+      "0.0.1": "First release"
+    }
+  },
+
+  "compatibility": {
+    "minimumVersion": "5.0.0",
+    "maximumVersion": null,
+    "blacklist": [
+    ]
+  }
+}

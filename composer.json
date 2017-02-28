@@ -1,0 +1,15 @@
+{
+  "name": "k10r/staging",
+  "type": "shopware-core-plugin",
+  "description": "Shopware-Staging Env for k10r-Projects",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Siegmund Mioduszewski",
+      "email": "s.mioduszewski@k10r.de"
+    }
+  ],
+  "require": {
+    "composer/installers": "~1.0"
+  }
+}
