@@ -2,7 +2,7 @@
 
 __This plugin is only designed for use in staging/pre-live environments!__
 
-K10rStaging makes you aware, that you are currently working in a staging environment by showing a message on every page.
+K10rStaging makes you aware that you are currently working in a staging environment by showing a message on every page.
 It also prevents shopware from sending mails to customers, by using [MailTrap.io](https://mailtrap.io/) to catch all outgoing e-mails.
 
 ## Installation and usage
