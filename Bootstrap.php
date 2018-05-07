@@ -184,7 +184,7 @@ class Shopware_Plugins_Core_K10rStaging_Bootstrap extends Shopware_Components_Pl
     public function sendMail()
     {
         $options = [
-            'host'     => 'mailtrap.io',
+            'host'     => 'smtp.mailtrap.io',
             'username' => $this->Config()->get('mailtrap_username'),
             'password' => $this->Config()->get('mailtrap_password'),
             'auth'     => 'login',
