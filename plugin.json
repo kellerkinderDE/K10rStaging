@@ -9,15 +9,17 @@
   "author": "Kellerkinder / k10r GmbH",
   "support": "anfragen@kellerkinder.de",
 
-  "currentVersion": "1.0.0",
+  "currentVersion": "1.0.1",
 
   "changelog": {
     "de": {
+      "1.0.1": "SMTP-Host von Mailtrap angepasst",
       "1.0.0": "Veröffentlichung auf GitHub",
       "0.0.2": "Staging-Hinweis für Frontend ergänzt",
       "0.0.1": "Erstveröffentlichung"
     },
     "en": {
+      "1.0.1": "Changed SMTP host for Mailtrap",
       "1.0.0": "Release on GitHub",
       "0.0.2": "Added staging notice in frontend",
       "0.0.1": "First release"
