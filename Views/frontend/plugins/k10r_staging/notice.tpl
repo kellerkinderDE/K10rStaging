@@ -1,3 +1,5 @@
 {block name='frontend_k10r_staging_notice'}
-    {include file='frontend/_includes/messages.tpl' type='info' content="{s name='K10rStagingNotice'}Sie befinden sich aktuell im STAGING-System.{/s}"}
+    <div style="position: absolute; top: 0; width: 100%;">
+        {include file='frontend/_includes/messages.tpl' type='info' content=$K10rStagingNotice}
+    </div>
 {/block}
