@@ -13,7 +13,7 @@
 
   "changelog": {
     "de": {
-      "1.0.2": "Staging-Hinweis wird jetzt über den Enlight ViewRenderer eingebunden um Komplitkation mit angepassten Themes zu vermeiden. Außerdem wird der Hinweis jetzt auch im Backend ausgegeben.",
+      "1.0.2": "Staging-Hinweis wird jetzt über den Enlight ViewRenderer eingebunden um Komplikation mit angepassten Themes zu vermeiden. Außerdem wird der Hinweis jetzt auch im Backend ausgegeben.",
       "1.0.1": "SMTP-Host von Mailtrap angepasst",
       "1.0.0": "Veröffentlichung auf GitHub",
       "0.0.2": "Staging-Hinweis für Frontend ergänzt",
