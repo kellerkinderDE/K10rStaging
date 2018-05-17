@@ -69,11 +69,7 @@ class All implements SubscriberInterface
         }
 
         $args->setReturn(
-            str_replace(
-                '</body>',
-                $stagingBadge . '</body>',
-                $args->getReturn()
-            )
+            preg_replace('/^<body([^>]*)>/im', '<body$1>' . $stagingBadge, $args->getReturn())
         );
     }
 }
