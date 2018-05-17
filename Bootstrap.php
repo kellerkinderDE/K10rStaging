@@ -201,7 +201,11 @@ class Shopware_Plugins_Core_K10rStaging_Bootstrap extends Shopware_Components_Pl
     public function registerSubscribers()
     {
         $subscribers = [
-            new \Shopware\Plugins\K10rStaging\Subscribers\Frontend\All($this),
+            new \Shopware\Plugins\K10rStaging\Subscribers\Frontend\All(
+                $this,
+                $this->get('template'),
+                $this->get('snippets')
+            ),
         ];
 
         foreach ($subscribers as $subscriber) {
