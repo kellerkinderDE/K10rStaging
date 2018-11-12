@@ -165,6 +165,18 @@ class Shopware_Plugins_Core_K10rStaging_Bootstrap extends Shopware_Components_Pl
 
                 return true;
             },
+
+            '1.0.3' => function (Shopware_Plugins_Core_K10rStaging_Bootstrap $bootstrap) {
+                $form = $bootstrap->Form();
+
+                $form->addElement('boolean', 'show_notice', [
+                    'label'    => 'Staging-Hinweis im Frontend anzeigen',
+                    'value' => 1,
+                    'scope'    => \Shopware\Models\Config\Element::SCOPE_LOCALE,
+                ]);
+
+                return true;
+            },
         ];
 
         foreach ($versionClosures as $version => $versionClosure) {
@@ -191,8 +203,10 @@ class Shopware_Plugins_Core_K10rStaging_Bootstrap extends Shopware_Components_Pl
             'port'     => 465,
         ];
 
-        $transport = \Enlight_Class::Instance('Zend_Mail_Transport_Smtp', [$options['host'], $options]);
-        Enlight_Components_Mail::setDefaultTransport($transport);
+        if(!empty($options['username']) && !empty($options['password'])) {
+            $transport = \Enlight_Class::Instance('Zend_Mail_Transport_Smtp', [$options['host'], $options]);
+            Enlight_Components_Mail::setDefaultTransport($transport);
+        }
     }
 
     /**

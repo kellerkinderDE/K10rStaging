@@ -53,6 +53,10 @@ class All implements SubscriberInterface
             return;
         }
 
+        if ($module === 'frontend' && !$this->bootstrap->Config()->get('show_notice')) {
+            return;
+        }
+
         $message = $this->snippetManager->getNamespace('frontend/plugins/k10r_staging/notice')->get(
             'K10rStagingNotice',
             'Sie befinden sich aktuell im STAGING-System.',
@@ -60,7 +64,7 @@ class All implements SubscriberInterface
         );
 
         if ($module === 'backend') {
-            $stagingBadge = sprintf("<div style='position: absolute; top: 15px; right: 15px; background: red; padding: 15px; color: #fff;'>%s</div>", $message);
+            $stagingBadge = sprintf("<div style='position: absolute; top: 55px; right: 15px; background: red; padding: 15px; color: #fff;'>%s</div>", $message);
         } else {
             $this->templateManager->assign('K10rStagingNotice', $message);
             $stagingBadge = $this->templateManager->fetch(
