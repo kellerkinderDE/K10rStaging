@@ -9,10 +9,11 @@
   "author": "Kellerkinder / k10r GmbH",
   "support": "anfragen@kellerkinder.de",
 
-  "currentVersion": "1.0.2",
+  "currentVersion": "1.0.3",
 
   "changelog": {
     "de": {
+      "1.0.3": "Optionale Deaktivierung von Mailtrap und Frontend-Banner ergänzt",
       "1.0.2": "Staging-Hinweis wird jetzt über den Enlight ViewRenderer eingebunden um Komplikation mit angepassten Themes zu vermeiden. Außerdem wird der Hinweis jetzt auch im Backend ausgegeben.",
       "1.0.1": "SMTP-Host von Mailtrap angepasst",
       "1.0.0": "Veröffentlichung auf GitHub",
@@ -20,6 +21,7 @@
       "0.0.1": "Erstveröffentlichung"
     },
     "en": {
+      "1.0.3": "Added optional disabling of Mailtrap and frontend notice",
       "1.0.2": "Staging notice is now injected through Enlight ViewRenderer to avoid complications with custom themes and is now also displayed in the backend",
       "1.0.1": "Changed SMTP host for Mailtrap",
       "1.0.0": "Release on GitHub",
