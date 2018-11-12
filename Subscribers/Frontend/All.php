@@ -53,6 +53,10 @@ class All implements SubscriberInterface
             return;
         }
 
+        if ($module === 'frontend' && !$this->bootstrap->Config()->get('show_notice')) {
+            return;
+        }
+
         $message = $this->snippetManager->getNamespace('frontend/plugins/k10r_staging/notice')->get(
             'K10rStagingNotice',
             'Sie befinden sich aktuell im STAGING-System.',

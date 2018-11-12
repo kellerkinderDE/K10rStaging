@@ -165,6 +165,18 @@ class Shopware_Plugins_Core_K10rStaging_Bootstrap extends Shopware_Components_Pl
 
                 return true;
             },
+
+            '1.0.3' => function (Shopware_Plugins_Core_K10rStaging_Bootstrap $bootstrap) {
+                $form = $bootstrap->Form();
+
+                $form->addElement('boolean', 'show_notice', [
+                    'label'    => 'Staging-Hinweis im Frontend anzeigen',
+                    'value' => 1,
+                    'scope'    => \Shopware\Models\Config\Element::SCOPE_LOCALE,
+                ]);
+
+                return true;
+            },
         ];
 
         foreach ($versionClosures as $version => $versionClosure) {
